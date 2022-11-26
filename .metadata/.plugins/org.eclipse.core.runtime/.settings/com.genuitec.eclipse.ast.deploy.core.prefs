@@ -1,0 +1,13 @@
+#Tue Nov 30 15:19:51 CST 2021
+tomcat7Server.web11.deploymentPath=D\:\\TomCat\\webapps\\web11
+tomcat7Server.web11.isExploded=true
+tomcat7Server.web11.deployIsOverProject=false
+tomcat7Server.web11.shouldOverwrite=false
+tomcat7Server.web11.isUptoDate=true
+tomcat7Server.web11.IEARProjectName=
+eclipse.preferences.version=1
+tomcat7Server.web11.contextRoot=/web11
+tomcat7Server.web11.type=WebDeployment
+tomcat7Server.web11.isDeployed=true
+tomcat7Server.web11.altContextRoot=
+tomcat7Server.web11.shouldBackup=false

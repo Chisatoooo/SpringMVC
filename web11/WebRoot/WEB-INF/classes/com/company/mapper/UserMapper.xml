@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.mapper.UserMapper">
+   	<insert id="insert" parameterType="user">
+    	insert into user values (#{username}, #{userpwd}, #{phone}, #{uname}, #{IDnumber}, #{birthday}, #{address}, #{headimage}, #{date}, #{state})
+   	</insert>
+   	<select id="selectPwd" parameterType="String" resultType="String">
+   		select userpwd from user where username = #{username}
+   	</select>
+   	<select id="selectState" parameterType="String" resultType="String">
+   		select state from user where username = #{username}
+   	</select>
+   	<select id="queryOneUser" parameterType="String" resultType="User">
+   		select * from user where username = #{username}
+   	</select>
+   	<!-- 参数绑定:在标签中不写参数类型 -->
+   	<update id="updatePwd">
+   		update user set userpwd = #{userpwd} where username = #{username}
+   	</update>
+   	<update id="updateBirthday">
+   		update user set birthday = #{birthday} where username = #{username}
+   	</update>
+   	<update id="updatePhone">
+   		update user set phone = #{phone} where username = #{username}
+   	</update>
+   	<update id="updateAddress">
+   		update user set address = #{address} where username = #{username}
+   	</update>
+   	<update id="updateHeadimage">
+   		update user set headimage = #{headimage} where username = #{username}
+   	</update>
+   	<select id="selectPageUser" resultType="User">
+   		select * from user limit #{offset},#{count}
+   	</select>
+   	<!-- 参数绑定:在标签中不写参数类型 -->
+   	
+   	<select id="selectAllUser" resultType="User">
+   		select * from user
+   	</select>
+   	<update id="deleteUser" parameterType="String">
+   		update user set state = "已注销" where username = #{username}
+   	</update>
+   	<update id="recoverUser" parameterType="String">
+   		update user set state = "已注册" where username = #{username}
+   	</update>
+   	<select id="queryPhone" parameterType="String" resultType="String">
+   		select phone from user where username = #{username}
+   	</select>
+   	<select id="queryAddress" parameterType="String" resultType="String">
+   		select address from user where username = #{username}
+   	</select>
+</mapper>

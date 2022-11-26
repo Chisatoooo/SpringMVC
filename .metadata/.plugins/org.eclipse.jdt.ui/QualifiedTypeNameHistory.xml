@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.mybatis.spring.annotation.MapperScan"/>
+<fullyQualifiedTypeName name="com.company.entity.User"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.annotations.Mapper"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+<fullyQualifiedTypeName name="org.springframework.web.multipart.commons.CommonsMultipartFile"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+<fullyQualifiedTypeName name="org.springframework.http.HttpHeaders"/>
+<fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
+<fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
+<fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.annotations.Param"/>
+<fullyQualifiedTypeName name="com.company.mapper.AdminMapper"/>
+<fullyQualifiedTypeName name="com.company.service.AdminService"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="com.company.entity.Admin"/>
+<fullyQualifiedTypeName name="com.company.mapper.ProductMapper"/>
+<fullyQualifiedTypeName name="com.company.service.ProductService"/>
+<fullyQualifiedTypeName name="com.company.entity.Product"/>
+<fullyQualifiedTypeName name="org.springframework.format.annotation.DateTimeFormat"/>
+<fullyQualifiedTypeName name="com.company.mapper.ShoppingCarMapper"/>
+<fullyQualifiedTypeName name="com.company.service.ShoppingCarService"/>
+<fullyQualifiedTypeName name="org.springframework.web.portlet.bind.annotation.RenderMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.company.mapper.OrdersMapper"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="com.company.service.OrdersService"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.company.entity.Orders"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.company.entity.ShoppingCar"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="sun.net.www.http.HttpClient"/>
+<fullyQualifiedTypeName name="org.apache.commons.httpclient.HttpClient"/>
+<fullyQualifiedTypeName name="org.apache.commons.httpclient.methods.PostMethod"/>
+<fullyQualifiedTypeName name="org.apache.commons.httpclient.NameValuePair"/>
+</qualifiedTypeNameHistroy>

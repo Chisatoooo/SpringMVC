@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=web11/src&lt;com.company.service{AdminService.java[AdminService" modifiers="513" timestamp="1638265947832"/>
+<typeInfo handle="=web11/WebRoot\/WEB-INF\/lib\/spring-jdbc-4.2.1.RELEASE.jar&lt;org.springframework.jdbc.core(RowMapper.class[RowMapper" modifiers="1537" timestamp="1637567755928"/>
+<typeInfo handle="=web11/C:\/Users\/ASUS\/AppData\/Local\/Genuitec\/Common\/binary\/com.sun.java.jdk.win32.x86_1.6.0.013\/jre\/lib\/rt.jar&lt;javax.swing.tree(RowMapper.class[RowMapper" modifiers="1537" timestamp="1238670952000"/>
+<typeInfo handle="=web11/src&lt;com.company.service{ProductService.java[ProductService" modifiers="513" timestamp="1638601001065"/>
+<typeInfo handle="=web11/src&lt;com.company.service{ShoppingCarService.java[ShoppingCarService" modifiers="513" timestamp="1638603956436"/>
+<typeInfo handle="=web11/src&lt;com.company.service{OrdersService.java[OrdersService" modifiers="513" timestamp="1638608382352"/>
+<typeInfo handle="=web11/src&lt;com.company.mapper{OrdersMapper.java[OrdersMapper" modifiers="513" timestamp="1638607647011"/>
+</typeInfoHistroy>

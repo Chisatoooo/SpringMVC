@@ -1,0 +1,25 @@
+package com.company.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.company.entity.User;
+import com.company.mapper.UserDao;
+import com.company.service.UserService;
+
+public class Test {
+
+	/**
+	 * @param args
+	 * @throws Exception 
+	 */
+	public static void main(String[] args) throws Exception {
+		ApplicationContext ac = new ClassPathXmlApplicationContext("springandspringmvc.xml");
+		User user = new User();
+		user.setUsername("123456");
+		user.setUserpwd("123456");
+		UserService userService = (UserService) ac.getBean("userserviceid");
+		userService.UserRegister(user);
+	}
+
+}

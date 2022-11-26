@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.mapper.ProductMapper">
+	<insert id="insert" parameterType="Product">
+   		insert into product values (#{id}, #{name}, #{price}, #{image}, #{type}, #{state})
+   	</insert>
+   	<update id="deleteProduct" parameterType="int">
+   		update product set state = "已下架" where id = #{id}
+   	</update>
+   	<update id="recoverProduct" parameterType="int">
+   		update product set state = "已上架" where id = #{id}
+   	</update>
+   	<select id="UserQueryProduct" resultType="Product">
+   		select id,name,price,image,type from product where state = "已上架"
+   	</select>
+   	<select id="UserFuzzyQueryProduct" parameterType="String" resultType="Product">
+   		select id,name,price,image,type from product where state = "已上架" and name like concat(concat("%",#{context}),"%")
+   	</select>
+   	<select id="UserQueryProductPage" resultType="Product">
+   		select id,name,price,image,type from product where state = "已上架" limit #{offset},#{count}
+   	</select>
+   	<select id="UserFuzzyQueryProductPage" resultType="Product">
+   		select id,name,price,image,type from product where state = "已上架" and name like concat(concat("%",#{context}),"%") order by price desc limit #{offset},#{count}
+   	</select>
+   	<select id="AdminQueryProduct" resultType="Product">
+   		select * from product
+   	</select>
+   	<select id="AdminQueryProductById" parameterType="int" resultType="Product">
+   		select * from product where id = #{id}
+   	</select>
+   	<select id="AdminQueryProductPage" resultType="Product">
+   		select * from product limit #{offset},#{count}
+   	</select>
+   	<select id="AdminFuzzyQuery" parameterType="String" resultType="Product">
+   		select * from product where name like concat(concat("%",#{context}),"%") order by price desc
+   	</select>
+   	<select id="AdminFuzzyQueryProductPage" resultType="Product">
+   		select * from product where name like concat(concat("%",#{context}),"%") order by price desc limit #{offset},#{count}
+   	</select>
+   	<update id="AdminUpdatePrice">
+   		update product set price = #{price} where id = #{id}
+   	</update>
+</mapper>

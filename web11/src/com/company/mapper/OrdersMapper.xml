@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.mapper.OrdersMapper">
+	<insert id="insert" parameterType="Orders">
+		insert into orders values (#{oid}, #{fk_order_username}, #{fk_phone}, #{fk_address}, #{fk_product_id}, #{paystate}, #{date}, #{deliverystate}, #{orderstate})
+	</insert>
+	<update id="cancelOrder" parameterType="int">
+		update orders set orderstate = "已取消" where oid = #{oid}
+	</update>
+	<select id="AdminQueryOrders" resultType="Orders">
+		select * from orders
+	</select>
+	<select id="UserQueryOrders" parameterType="String" resultType="Orders">
+		select fk_order_username,fk_product_id,fk_phone,fk_address,paystate,date,deliverystate,orderstate from orders where fk_order_username = #{fk_order_username} 
+	</select>
+	<update id="updateDeliverystate" parameterType="int">
+		update orders set deliverystate = "已发货" where oid = #{oid}
+	</update>
+</mapper>

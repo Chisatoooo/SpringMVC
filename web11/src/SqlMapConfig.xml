@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 别名引入:每个类别名默认值分别是类名,首字母大小写均可 -->	
+	<typeAliases>
+		<package name="com.company.entity"/>
+	</typeAliases>
+	<mappers>
+		<!-- 自动引入映射文件 -->
+		<package name="com.company.mapper"/>
+	</mappers>
+</configuration>
